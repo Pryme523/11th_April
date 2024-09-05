@@ -1,25 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints the alphabet in lowercase
- * and then in uppercase
- * followed by a newline
+ * main - prints the alphabet in lower case
  *
  * Return 0 Always
  */
 
 int main (void)
 {
-	char a = 'a', A = 'A';
+	char a = 'a';
+	char A = 'A';
+		while(a <= 'z')
+		{
+			putchar(a);
+			a++;
+		}
 
-	while(a <= 'z')
-	{
-		putchar(a);
-		a++;
-	}
-	while(A <= 'Z')
-	{
-		putchar(A);
-		A++;
-	}
+		while (A <= 'Z')
+		{
+			putchar(A);
+			A++;
+		}
 	return (0);
 }
